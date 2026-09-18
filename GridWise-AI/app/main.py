@@ -51,6 +51,14 @@ def get_system_ui():
                 return RedirectResponse(url=f"/system-ui-static/{rel_path}")
     return RedirectResponse(url="/docs")
 
+
+@app.get("/system-ui/ai-interpretation")
+def get_ai_interpretation_ui():
+    page_path = os.path.join(system_ui_path, "ai_interpretation", "code.html")
+    if os.path.exists(page_path):
+        return FileResponse(page_path, media_type="text/html")
+    return RedirectResponse(url="/docs")
+
 @app.get("/test", response_class=HTMLResponse)
 def get_test_page():
     html_path = os.path.join(os.path.dirname(__file__), "static", "test.html")
