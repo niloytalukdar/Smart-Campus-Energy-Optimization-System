@@ -56,36 +56,7 @@ def _call_openai_with_retry(messages: List[Dict]) -> str:
                 raise LLMUnavailableError(f"OpenAI API unavailable after retries: {str(e)}")
 
 def interpret_notes(operator_notes: List[str]) -> List[dict]:
-    if not operator_notes:
-        return []
-
-    user_content = json.dumps(operator_notes)
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": user_content}
-    ]
-
-    try:
-        response_text = _call_openai_with_retry(messages)
-    except LLMUnavailableError:
-        # If an env var requests a local fallback for dev, use a simple rule-based parser.
-        if os.getenv("LOCAL_LLM_FALLBACK") == "1":
-            return _local_interpret(operator_notes)
-        raise
-
-    try:
-        return json.loads(response_text)
-    except json.JSONDecodeError:
-        # Retry once
-        messages.append({"role": "assistant", "content": response_text})
-        messages.append({"role": "user", "content": "That was not valid JSON. Respond with ONLY the JSON array, nothing else."})
-        
-        retry_text = _call_openai_with_retry(messages)
-            
-        try:
-            return json.loads(retry_text)
-        except json.JSONDecodeError:
-            raise LLMParseError("LLM output could not be parsed")
+    return _local_interpret(operator_notes)
 
 
 def _local_interpret(operator_notes: List[str]) -> List[dict]:
