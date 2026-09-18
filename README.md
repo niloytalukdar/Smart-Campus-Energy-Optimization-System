@@ -3,7 +3,10 @@
 GridWise AI is a Smart Campus Energy Optimization AI System. It combines large language models (LLMs) with mathematical optimization (PuLP) to interpret natural language operator notes and enforce energy constraints across a microgrid campus.
 
 ---
+## LIVE LINK
+https://smart-campus-energy-optimization-system-8.onrender.com/system-ui/ai-interpretation
 
+---
 ## 📖 Project Details
 
 **Objective:**
