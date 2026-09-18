@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GridWise AI — App UI</title>
+  <link rel="stylesheet" href="/app-ui-static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GridWise AI</h1>
+      <p class="lead">Operator notes → optimization plan</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <label for="notes">Operator notes</label>
+        <textarea id="notes" placeholder="Enter operator notes (one per line)"></textarea>
+        <div class="controls">
+          <button id="sampleBtn">Load Sample</button>
+          <button id="runBtn" class="primary">Run Optimization</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Response</h3>
+        <pre id="output">No result yet.</pre>
+      </section>
+
+      <section class="card">
+        <h3>Advanced: Raw OptimizeRequest JSON</h3>
+        <p class="muted">Paste a full `OptimizeRequest` JSON here (you provide `hours` and `battery` if you want a custom scenario).</p>
+        <textarea id="rawInput" placeholder='{"scenario_id":"S1","operator_notes":["..."],"hours":[],"battery":{}}'></textarea>
+        <div class="controls">
+          <button id="runRawBtn" class="secondary">Run Raw JSON</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>UI served from <code>/app-ui</code>. API: <code>/optimize-energy</code></small>
+    </footer>
+  </div>
+
+  <script src="/app-ui-static/app.js"></script>
+</body>
+</html>

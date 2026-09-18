@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#33353a", "on-primary": "#3f2e00", "inverse-surface": "#e2e2e9", "primary-container": "#f5c452", "surface-container": "#1e1f25", "tertiary-fixed-dim": "#45dfa4", "surface-container-low": "#1a1b21", "on-primary-fixed-variant": "#5b4300", "primary-fixed": "#ffdf9d", "on-secondary-container": "#e6ecff", "primary": "#ffe4af", "surface-container-lowest": "#0c0e13", "tertiary": "#77ffc4", "outline": "#9b8f7c", "error": "#ffb4ab", "surface-tint": "#f0c04e", "on-secondary-fixed-variant": "#004395", "secondary": "#adc6ff", "on-tertiary-container": "#006243", "secondary-fixed": "#d8e2ff", "surface-container-high": "#282a2f", "background": "#111318", "inverse-primary": "#785a00", "on-surface-variant": "#d2c5b0", "secondary-container": "#0566d9", "tertiary-container": "#4ae3a8", "on-tertiary-fixed": "#002114", "surface-bright": "#37393f", "on-secondary": "#002e6a", "on-surface": "#e2e2e9", "primary-fixed-dim": "#f0c04e", "on-primary-fixed": "#251a00", "on-error": "#690005", "on-error-container": "#ffdad6", "error-container": "#93000a", "surface-dim": "#111318", "inverse-on-surface": "#2e3036", "on-tertiary-fixed-variant": "#005137", "secondary-fixed-dim": "#adc6ff", "on-background": "#e2e2e9", "outline-variant": "#4e4636", "surface-variant": "#33353a", "surface": "#111318", "on-secondary-fixed": "#001a42", "on-tertiary": "#003825", "on-primary-container": "#6d5100", "tertiary-fixed": "#68fcbf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "0.75rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.5rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "gutter": "0.5rem" }, "fontFamily": { "body-md": [ "Space Mono" ], "body-sm": [ "Space Mono" ], "telemetry-num-lg": [ "Space Mono" ], "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "telemetry-num-md": [ "Space Mono" ], "body-lg": [ "Space Mono" ], "label-sm": [ "Space Mono" ], "headline-xl": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-md": [ "Space Mono" ] }, "fontSize": { "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "telemetry-num-lg": [ "28px", { "lineHeight": "32px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-xl-mobile": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "telemetry-num-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "700" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-xl": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><div class="w-full sticky top-0 z-50 bg-surface-container-lowest">
+  <div class="max-w-[1720px] mx-auto px-margin py-2 flex items-center">
+    <!-- Logo only header -->
+    <img alt="GridWise AI Logo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='40'><rect rx='6' ry='6' width='40' height='40' fill='%230b1220'/><g transform='translate(6,6)'><circle cx='14' cy='14' r='10' fill='%2341b3ff'/></g><text x='54' y='26' font-family='Verdana' font-size='14' fill='%23e2e2e9'>GridWise</text><text x='118' y='26' font-family='Verdana' font-size='12' fill='%2388c3ff'>AI</text></svg>" class="h-8 w-auto object-contain">
+  </div>
+</div><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+
+<div class="w-full px-margin py-space-lg max-w-[1720px] mx-auto">
+
+<!-- Source Operator Notes Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-lg space-y-space-md shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">smart_outlet</span>
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">
+            RAW INPUT PROMPT [SCN-2025-0518-BESS09]
+          </span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>SUBMITTED: 13:58:12 UTC</span>
+<span>•</span>
+<span>CHANNEL: WEB-TERMINAL</span>
+</div>
+</div>
+<div class="relative bg-surface-container-lowest p-space-md rounded-lg">
+  <div>
+    <label for="operatorNotes" class="font-body-md text-on-surface-variant">Operator notes (natural language)</label>
+    <textarea id="operatorNotes" class="w-full mt-2 p-3 bg-surface-container text-on-surface rounded" rows="3" placeholder="Describe changes, e.g. 'Solar output will drop to 20% from 13:00 to 15:00; do not charge battery between 17 and 20.'"></textarea>
+    <div class="mt-3 flex items-center gap-2">
+      <button id="systemRunBtn" class="px-4 py-2 bg-primary text-on-primary rounded">Run API</button>
+      <button id="systemSampleBtn" class="px-3 py-2 bg-surface-container-high text-on-surface rounded">Load Example</button>
+      <span id="systemStatus" class="ml-3 text-on-surface-variant"></span>
+    </div>
+  </div>
+  <div class="absolute -top-2 right-4 px-space-xs bg-surface-container-high text-on-surface-variant font-label-sm text-[9px] uppercase tracking-widest">
+    NLP String Stream Ingestion
+  </div>
+  <div id="apiResponseArea" class="mt-4 hidden">
+    <h4 class="text-on-surface">API Response</h4>
+    <pre id="apiOutput" class="p-3 bg-surface-container-low rounded text-[13px] max-h-60 overflow-auto"></pre>
+  </div>
+</div>
+
+<!-- Hourly Plan Live View -->
+<div id="hourlyPlanPanel" class="mt-space-md bg-surface-container-low rounded-xl p-space-md hidden">
+  <div class="flex items-center justify-between">
+    <h3 class="font-headline-sm text-on-surface">Hourly Plan</h3>
+    <div class="font-mono text-on-surface-variant">Realtime per-hour dispatch</div>
+  </div>
+  <div id="hourlyTiles" class="grid grid-cols-12 md:grid-cols-24 gap-1 mt-3">
+    <!-- JS will populate 24 tiles here -->
+  </div>
+</div>
+<script>
+// Small client to call /optimize-energy and update the page
+function buildDefaultHours(){
+  const hours = [];
+  for(let i=0;i<24;i++) hours.push({hour:i,demand_kwh:200,solar_kwh:(i>=8&&i<=17)?100:0,price:(i<12)?7:12});
+  return hours;
+}
+
+async function postOptimize(payload){
+  const res = await fetch('/optimize-energy',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  return res.json();
+}
+
+document.getElementById('systemSampleBtn').addEventListener('click', ()=>{
+  document.getElementById('operatorNotes').value = "Solar output will drop to 20% from 13:00 to 15:00 due to maintenance on Substation C. Enforce no-charge battery window between 17:00 and 20:00.";
+});
+
+document.getElementById('systemRunBtn').addEventListener('click', async ()=>{
+  const notes = document.getElementById('operatorNotes').value.split('\n').map(s=>s.trim()).filter(Boolean);
+  if(!notes.length){ alert('Please enter operator notes'); return; }
+  const payload = {scenario_id:'UI-SYS', operator_notes: notes, battery:{capacity_kwh:2400, initial_energy_kwh:1200, max_charge_rate_kwh:500, max_discharge_rate_kwh:500, charge_efficiency:0.95, discharge_efficiency:0.95}, hours: buildDefaultHours() };
+  const statusEl = document.getElementById('systemStatus');
+  statusEl.textContent = 'Running...';
+  try{
+    const data = await postOptimize(payload);
+    document.getElementById('apiResponseArea').classList.remove('hidden');
+    document.getElementById('apiOutput').textContent = JSON.stringify(data, null, 2);
+    statusEl.textContent = 'Done';
+    // Render directives, hourly plan, and update KPIs in realtime
+    renderDirectives(data.directive_interpretation || []);
+    renderHourlyPlan(data.hourly_plan || []);
+    updateKPIs(data);
+    // Unhide results panels so the KPI rail and directive breakdown appear
+    const showIf = id => { const e = document.getElementById(id); if(e) e.classList.remove('hidden'); };
+    showIf('kpiRail');
+    showIf('directivesContainer');
+    showIf('hourlyPlanPanel');
+  }catch(e){
+    statusEl.textContent = 'Error';
+    document.getElementById('apiOutput').textContent = String(e);
+  }
+});
+
+function renderDirectives(dirs){
+  const container = document.getElementById('directivesContainer');
+  if(!container) return;
+  if(!dirs.length){ container.innerHTML = '<div class="p-4 bg-surface-container-low rounded">No directives returned.</div>'; return; }
+  container.innerHTML = '';
+  dirs.forEach((d,i)=>{
+    const card = document.createElement('div');
+    card.className = 'bg-surface-container-low rounded-xl p-space-lg space-y-space-md shadow-md';
+    const hours = (d.hours||[]).join(', ');
+    const factor = d.factor===null? '' : ('Factor: ' + (d.factor*100).toFixed(0)+'%');
+    card.innerHTML = `
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <strong class="text-on-surface">${d.directive_type}</strong>
+          <span class="text-on-surface-variant">${factor}</span>
+        </div>
+        <div class="text-on-surface-variant">Hours: [${hours}]</div>
+      </div>
+      <div class="p-2 bg-surface-container-lowest rounded">${d.explanation||''}</div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderHourlyPlan(hourly){
+  const container = document.getElementById('hourlyTiles');
+  if(!container) return;
+  container.innerHTML = '';
+  for(let i=0;i<24;i++){
+    const tile = document.createElement('div');
+    tile.className = 'p-2 text-center rounded text-[12px] bg-surface-container-high text-on-surface-variant';
+    tile.id = 'hour-tile-'+i;
+    const hourData = hourly.find(h=>h.hour===i) || null;
+    const gridKw = hourData? hourData.grid_kwh.toFixed(1): '-';
+    const action = hourData? hourData.battery_action : 'idle';
+    let bg = 'bg-surface-container-high';
+    if(action==='charge') bg = 'bg-tertiary-container text-on-tertiary-container';
+    if(action==='discharge') bg = 'bg-primary-container text-on-primary-container';
+    if(action==='idle') bg = 'bg-surface-container-high text-on-surface-variant';
+    tile.className = 'p-2 text-center rounded text-[12px] '+bg;
+    tile.innerHTML = `<div class="font-mono text-[10px]">${i}</div><div class="font-bold">${gridKw} kWh</div><div class="text-[10px]">${action}</div>`;
+    container.appendChild(tile);
+  }
+}
+
+function updateKPIs(obj){
+  if(!obj) return;
+  const setText = (id, v)=>{ const el=document.getElementById(id); if(el) el.textContent = v };
+  setText('solarCurtailmentVal', obj.solar_curtailment || (obj.directive_interpretation && obj.directive_interpretation.find(d=>d.directive_type==='solar_reduction')? ( (obj.directive_interpretation.find(d=>d.directive_type==='solar_reduction').factor||0).toFixed(2)+'x') : '')); 
+  setText('bessCeilingVal', obj.bess_dispatch_ceiling || '');
+  setText('chillerViolationVal', obj.chiller_violation || '');
+  setText('peakCostDeltaVal', obj.peak_cost_delta!==undefined? obj.peak_cost_delta : (obj.total_cost? '$'+obj.total_cost.toFixed(2): ''));
+  setText('thermalHeadroomVal', obj.thermal_headroom || '');
+}
+</script>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs font-label-sm">
+<div class="flex flex-wrap items-center gap-space-lg text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+<span>MODEL: <strong class="text-on-surface font-mono">EnergyLLM-v2.4</strong></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="h-2 w-2 rounded-full bg-tertiary"></span>
+<span>CONFIDENCE SCORE: <strong class="text-tertiary font-mono">98.2%</strong></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="h-2 w-2 rounded-full bg-primary-container"></span>
+<span>EXECUTION STATUS: <strong class="text-on-surface font-mono">2 Applied, 1 Rejected</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded font-mono text-[10px] text-tertiary">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+          STATIC CONSTRAINT CHECK COMPLETE
+        </div>
+</div>
+</div>
+<!-- Visual Breakdown Diagram / KPI Rail -->
+<div id="kpiRail" class="grid grid-cols-1 md:grid-cols-3 gap-space-sm hidden">
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">SOLAR CURTAILMENT TENSOR</span>
+<div id="solarCurtailmentVal" class="font-telemetry-num-lg text-telemetry-num-lg text-primary-container mt-space-xs font-mono">0.20x</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active 3 Hours (13:00 - 15:00)</span>
+</div>
+<svg class="w-16 h-12 text-primary" fill="none" viewbox="0 0 64 40">
+<path d="M2 30 L18 30 L22 10 L42 10 L46 30 L62 30" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+<circle cx="32" cy="10" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">BESS DISPATCH CEILING</span>
+<div id="bessCeilingVal" class="font-telemetry-num-lg text-telemetry-num-lg text-secondary mt-space-xs font-mono">0.0 kW</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active 4 Hours (17:00 - 20:00)</span>
+</div>
+<svg class="w-16 h-12 text-secondary" fill="none" viewbox="0 0 64 40">
+<path d="M2 20 L24 20 L24 35 L40 35 L40 20 L62 20" stroke="currentColor" stroke-linecap="square" stroke-width="2"></path>
+<line stroke="currentColor" stroke-width="4" x1="24" x2="40" y1="35" y2="35"></line>
+</svg>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider block">CHILLER SURGE VIOLATION</span>
+<div id="chillerViolationVal" class="font-telemetry-num-lg text-telemetry-num-lg text-error mt-space-xs font-mono">+35.0 kW</div>
+<span class="font-body-sm text-body-sm text-error">Headroom breach: Feeder C-4 (Hour 22)</span>
+</div>
+<svg class="w-16 h-12 text-error" fill="none" viewbox="0 0 64 40">
+<path d="M2 28 L40 28 L48 8 L62 8" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2"></path>
+<line stroke="currentColor" stroke-width="1.5" x1="10" x2="58" y1="18" y2="18"></line>
+<circle cx="48" cy="8" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+</div>
+<!-- Directive Cards Section -->
+<div id="directivesContainer" class="space-y-space-md hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">rule_folder</span>
+          Individual Directive Breakdown
+        </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">INDEX: 0x01 — 0x03 • 2 PASS / 1 FAIL</span>
+</div>
+<!-- Directive Card 1: Solar Reduction (Applied) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg space-y-space-md shadow-md transition-all hover:bg-surface-container">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-space-xs bg-primary-container text-on-primary-container font-label-md uppercase rounded tracking-wider flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">wb_sunny</span>
+              Solar Reduction
+            </span>
+<span class="px-space-sm py-space-xs bg-surface-container-highest text-primary-fixed font-mono font-label-md rounded">
+              Factor: 20% (0.20x)
+            </span>
+<span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface-variant font-mono text-label-sm">
+              DIR_ID: OPT-SLR-013
+            </span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-tertiary-container text-on-tertiary-container font-label-md uppercase rounded tracking-wider">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+            COMPILED • ACTIVE
+          </div>
+</div>
+<!-- NLP Entity Mapping -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm font-mono text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant uppercase font-label-sm">NLP Target:</span>
+<span class="text-primary font-bold">Substation C PV Array</span>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="text-on-surface-variant uppercase font-label-sm">Constraint:</span>
+<code class="px-space-xs py-0.5 bg-surface-container rounded">P_solar[t] &lt;= 0.20 * P_forecast[t]</code>
+</div>
+</div>
+<!-- Affected Hours Timeline -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Affected Hours (0 - 23h):</span>
+<span class="font-label-sm text-label-sm text-primary font-mono">HOURS SELECTED: [13, 14, 15] (3.0 hrs duration)</span>
+</div>
+<!-- 24-hour strip -->
+  <div class="grid grid-cols-12 md:grid-cols-24 gap-1 p-space-xs bg-surface-container-lowest rounded-lg">
+<!-- 00 - 12 -->
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">00</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">01</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">02</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">03</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">04</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">05</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">06</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">07</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">08</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">09</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">10</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">11</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">12</div>
+<!-- 13 - 15 Highlighted -->
+<div class="p-1 text-center bg-primary-container text-on-primary-container font-mono font-bold text-[10px] rounded shadow-sm ring-1 ring-primary">13</div>
+<div class="p-1 text-center bg-primary-container text-on-primary-container font-mono font-bold text-[10px] rounded shadow-sm ring-1 ring-primary">14</div>
+<div class="p-1 text-center bg-primary-container text-on-primary-container font-mono font-bold text-[10px] rounded shadow-sm ring-1 ring-primary">15</div>
+<!-- 16 - 23 -->
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">16</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">17</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">18</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">19</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">20</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">21</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">22</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">23</div>
+      </div>
+</div>
+<div class="flex items-start gap-space-xs text-body-sm text-on-surface-variant pt-space-xs">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">info</span>
+<div>
+<strong class="text-on-surface">Compiler Rationale:</strong> Natural language mapped “drop to 20% from 1 PM to 3 PM” to hours [13, 14, 15]. Applied solar derate factor of 0.20. Expected reduction: -480 kWh relative to baseline clear-sky model.
+          </div>
+</div>
+</div>
+<!-- Directive Card 2: No-Charge Window (Applied) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg space-y-space-md shadow-md transition-all hover:bg-surface-container">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-space-xs bg-secondary-container text-on-secondary-container font-label-md uppercase rounded tracking-wider flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">battery_charging_full</span>
+              No-Charge Window
+            </span>
+<span class="px-space-sm py-space-xs bg-surface-container-highest text-secondary-fixed font-mono font-label-md rounded">
+              P_charge_max = 0 kW
+            </span>
+<span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface-variant font-mono text-label-sm">
+              DIR_ID: OPT-BES-044
+            </span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-tertiary-container text-on-tertiary-container font-label-md uppercase rounded tracking-wider">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+            COMPILED • ACTIVE
+          </div>
+</div>
+<!-- NLP Entity Mapping -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm font-mono text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="text-on-surface-variant uppercase font-label-sm">NLP Target:</span>
+<span class="text-secondary font-bold">BESS-09 (2,400 kWh)</span>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="text-on-surface-variant uppercase font-label-sm">Constraint:</span>
+<code class="px-space-xs py-0.5 bg-surface-container rounded">P_ch[t] == 0 for t in [17, 18, 19, 20]</code>
+</div>
+</div>
+<!-- Affected Hours Timeline -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Affected Hours (0 - 23h):</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">HOURS SELECTED: [17, 18, 19, 20] (4.0 hrs window)</span>
+</div>
+<!-- 24-hour strip -->
+<div class="grid grid-cols-12 md:grid-cols-24 gap-1 p-space-xs bg-surface-container-lowest rounded-lg">
+<!-- 00 - 16 -->
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">00</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">01</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">02</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">03</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">04</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">05</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">06</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">07</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">08</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">09</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">10</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">11</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">12</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">13</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">14</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">15</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">16</div>
+<!-- 17 - 20 Highlighted Electric Blue -->
+<div class="p-1 text-center bg-secondary-container text-on-secondary-container font-mono font-bold text-[10px] rounded shadow-sm ring-1 ring-secondary">17</div>
+<div class="p-1 text-center bg-secondary-container text-on-secondary-container font-mono font-bold text-[10px] rounded shadow-sm ring-1 ring-secondary">18</div>
+<div class="p-1 text-center bg-secondary-container text-on-secondary-container font-mono font-bold text-[10px] rounded shadow-sm ring-1 ring-secondary">19</div>
+<div class="p-1 text-center bg-secondary-container text-on-secondary-container font-mono font-bold text-[10px] rounded shadow-sm ring-1 ring-secondary">20</div>
+<!-- 21 - 23 -->
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">21</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">22</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded">23</div>
+</div>
+</div>
+<div class="flex items-start gap-space-xs text-body-sm text-on-surface-variant pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">info</span>
+<div>
+<strong class="text-on-surface">Compiler Rationale:</strong> Natural language mapped “no-charge battery window between 17:00 and 20:00” to hours [17, 18, 19, 20]. Battery forced into idle or discharge state. Protects campus against CAISO On-Peak demand charges ($0.38/kWh).
+          </div>
+</div>
+</div>
+<!-- Directive Card 3: Chiller Load Override (REJECTED) -->
+<div class="bg-surface-container-lowest opacity-90 rounded-xl p-space-lg space-y-space-md shadow-inner">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-space-xs bg-surface-container-high text-on-surface-variant font-label-md uppercase rounded tracking-wider flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">ac_unit</span>
+              Load Override
+            </span>
+<span class="px-space-sm py-space-xs bg-surface-container-high text-error font-mono font-label-md rounded line-through">
+              Requested: 110% (+10% Surge)
+            </span>
+<span class="px-space-sm py-space-xs bg-surface-container text-on-surface-variant font-mono text-label-sm">
+              DIR_ID: OPT-CHL-099
+            </span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-error-container text-on-error-container font-label-md uppercase rounded tracking-wider animate-pulse">
+<span class="material-symbols-outlined text-[16px]">gpp_bad</span>
+            REJECTED • VIOLATION
+          </div>
+</div>
+<!-- Affected Hours Timeline -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Affected Hours (0 - 23h):</span>
+<span class="font-label-sm text-label-sm text-error font-mono">TARGET HOUR: [22] (ABORTED)</span>
+</div>
+<!-- 24-hour strip -->
+<div class="grid grid-cols-12 md:grid-cols-24 gap-1 p-space-xs bg-surface-container rounded-lg">
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">00</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">01</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">02</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">03</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">04</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">05</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">06</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">07</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">08</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">09</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">10</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">11</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">12</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">13</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">14</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">15</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">16</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">17</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">18</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">19</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">20</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">21</div>
+<!-- Hour 22 Strikethrough Warning Red -->
+<div class="p-1 text-center bg-error-container text-on-error-container font-mono font-bold text-[10px] rounded ring-1 ring-error relative overflow-hidden">
+<span class="line-through">22</span>
+<div class="absolute inset-0 bg-error opacity-20"></div>
+</div>
+<div class="p-1 text-center bg-surface-container-high text-on-surface-variant font-mono text-[10px] rounded opacity-40">23</div>
+</div>
+</div>
+<!-- Warning Icon & Reason Box -->
+<div class="bg-error-container/20 p-space-md rounded-lg space-y-space-xs">
+<div class="flex items-center gap-space-xs text-error font-headline-md text-[14px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+            DIRECTIVE REJECTED BY SAFETY ARBITER
+          </div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong class="text-error">Reason:</strong> Requested chiller load of 110% (345 kW) at Hour 22 violates Substation Feeder C-4 thermal headroom constraint (max allowable load 310 kW). Directive rejected to prevent safety breaker trip. Baseline schedule preserved.
+          </p>
+<div class="pt-space-xs flex flex-wrap items-center justify-between gap-space-xs text-label-sm font-mono text-on-surface-variant">
+<span class="text-error">Rule ID: SEC-GRID-THERMAL-882 (Hard Constraint)</span>
+<span class="bg-surface-container-highest px-space-xs py-0.5 rounded text-on-surface">ARBITRATION ENGINE: ENFORCED</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Solver Matrix Telemetry Drawer Preview -->
+<div class="bg-surface-container-low rounded-xl p-space-lg space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-mono">MATHEMATICAL FORMULATION</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Compiled Slack Variable Tensor Matrix</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary"></span>
+<span class="font-mono text-label-sm text-tertiary">SOLVER READY (DUAL RESIDUAL: 1.4e-07)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-space-sm font-mono text-body-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-1">
+<div class="text-on-surface-variant text-[11px] uppercase">State Variables</div>
+<div id="stateVarsVal" class="font-telemetry-num-md text-telemetry-num-md text-on-surface">1,152 Vars</div>
+<div class="text-[10px] text-tertiary">Continuous: 960 | Binary: 192</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-1">
+<div class="text-on-surface-variant text-[11px] uppercase">Active Inequations</div>
+<div id="activeInequationsVal" class="font-telemetry-num-md text-telemetry-num-md text-on-surface">2,410 Rows</div>
+<div class="text-[10px] text-primary">Dense Coeffs: 9.8%</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-1">
+<div class="text-on-surface-variant text-[11px] uppercase">Peak Cost Delta</div>
+<div id="peakCostDeltaVal" class="font-telemetry-num-md text-telemetry-num-md text-tertiary">-$412.30</div>
+<div class="text-[10px] text-tertiary">Saved vs unconstrained</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg space-y-1">
+<div class="text-on-surface-variant text-[11px] uppercase">Thermal Headroom</div>
+<div id="thermalHeadroomVal" class="font-telemetry-num-md text-telemetry-num-md text-primary-container">42.8 kW</div>
+<div class="text-[10px] text-on-surface-variant">Feeder C-4 Safe Margin</div>
+</div>
+</div>
+<!-- Removed LP snippet, operator action row, and nonfunctional buttons per user request -->
+</main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-md"><span>GRIDWISE AI TELEMETRY DISPATCH SYSTEM</span><span>•</span><span>NODE 04 RUNTIME: ACTIVE</span></div><div>SYSTEM TELEMETRY ENGINE © 2025 STANFORD MICROGRID INFRASTRUCTURE</div></div></footer></body></html>

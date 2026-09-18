@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#33353a", "on-primary": "#3f2e00", "inverse-surface": "#e2e2e9", "primary-container": "#f5c452", "surface-container": "#1e1f25", "tertiary-fixed-dim": "#45dfa4", "surface-container-low": "#1a1b21", "on-primary-fixed-variant": "#5b4300", "primary-fixed": "#ffdf9d", "on-secondary-container": "#e6ecff", "primary": "#ffe4af", "surface-container-lowest": "#0c0e13", "tertiary": "#77ffc4", "outline": "#9b8f7c", "error": "#ffb4ab", "surface-tint": "#f0c04e", "on-secondary-fixed-variant": "#004395", "secondary": "#adc6ff", "on-tertiary-container": "#006243", "secondary-fixed": "#d8e2ff", "surface-container-high": "#282a2f", "background": "#111318", "inverse-primary": "#785a00", "on-surface-variant": "#d2c5b0", "secondary-container": "#0566d9", "tertiary-container": "#4ae3a8", "on-tertiary-fixed": "#002114", "surface-bright": "#37393f", "on-secondary": "#002e6a", "on-surface": "#e2e2e9", "primary-fixed-dim": "#f0c04e", "on-primary-fixed": "#251a00", "on-error": "#690005", "on-error-container": "#ffdad6", "error-container": "#93000a", "surface-dim": "#111318", "inverse-on-surface": "#2e3036", "on-tertiary-fixed-variant": "#005137", "secondary-fixed-dim": "#adc6ff", "on-background": "#e2e2e9", "outline-variant": "#4e4636", "surface-variant": "#33353a", "surface": "#111318", "on-secondary-fixed": "#001a42", "on-tertiary": "#003825", "on-primary-container": "#6d5100", "tertiary-fixed": "#68fcbf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "0.75rem", "space-md": "0.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.5rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "gutter": "0.5rem" }, "fontFamily": { "body-md": [ "Space Mono" ], "body-sm": [ "Space Mono" ], "telemetry-num-lg": [ "Space Mono" ], "headline-xl-mobile": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "telemetry-num-md": [ "Space Mono" ], "body-lg": [ "Space Mono" ], "label-sm": [ "Space Mono" ], "headline-xl": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-md": [ "Space Mono" ] }, "fontSize": { "body-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "telemetry-num-lg": [ "28px", { "lineHeight": "32px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-xl-mobile": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "telemetry-num-md": [ "16px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "700" } ], "body-lg": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-xl": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><div class="w-full sticky top-0 z-50 bg-surface-container-lowest">
+  <div class="max-w-[1720px] mx-auto px-margin py-2 flex items-center">
+    <!-- Logo only header -->
+    <img alt="GridWise AI Logo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='40'><rect rx='6' ry='6' width='40' height='40' fill='%230b1220'/><g transform='translate(6,6)'><circle cx='14' cy='14' r='10' fill='%2341b3ff'/></g><text x='54' y='26' font-family='Verdana' font-size='14' fill='%23e2e2e9'>GridWise</text><text x='118' y='26' font-family='Verdana' font-size='12' fill='%2388c3ff'>AI</text></svg>" class="h-8 w-auto object-contain">
+  </div>
+</div><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Visual Sub-Header & Telemetry Strip -->
+<section class="w-full bg-surface-container-low px-margin py-space-md border-b border-surface-container-highest">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Title & Operational Subtitle -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-xs py-0.5 bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-widest">SCHEDULE // NODE-04</span>
+<span class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">24-Hour Dispatch Schedule &amp; Tariff Optimization</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-tertiary font-label-sm text-label-sm uppercase border border-surface-container-highest">SOLVED IN 412ms [LP-OPTIMAL]</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Optimal hourly dispatch schedule across grid import, on-site solar, and battery storage.
+        </p>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container-lowest p-space-xs border border-surface-container-highest">
+<div class="px-space-sm py-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Total Grid Import</span>
+<span class="font-telemetry-num-md text-telemetry-num-md text-secondary">8,420 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">kWh</span></span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="px-space-sm py-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Solar Consumed</span>
+<span class="font-telemetry-num-md text-telemetry-num-md text-primary-fixed-dim">3,890 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">kWh</span></span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="px-space-sm py-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">BESS Cycled</span>
+<span class="font-telemetry-num-md text-telemetry-num-md text-tertiary">1,680 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">kWh</span></span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="px-space-sm py-space-xs flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Min SOC Level</span>
+<span class="font-telemetry-num-md text-telemetry-num-md text-tertiary-container">15.0% <span class="font-body-sm text-body-sm text-outline font-normal">[360 kWh]</span></span>
+</div>
+</div>
+</div>
+<!-- Legend Bar & Tariff Legend Indicators -->
+<div class="mt-space-md pt-space-sm border-t border-surface-container-highest flex flex-wrap items-center justify-between gap-space-md font-label-md text-label-md">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-secondary inline-block"></span>
+<span class="text-on-surface">Grid Electricity (kW / kWh)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-primary-fixed-dim inline-block"></span>
+<span class="text-on-surface">Solar Generation (kW / kWh)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-tertiary inline-block"></span>
+<span class="text-on-surface">Battery Action (+Charge / -Discharge kW)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-secondary/15 border border-secondary/40 inline-block"></span>
+<span class="text-on-surface-variant">Lowest-Price TOU Tariff Window ($0.082/kWh)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 bg-error/20 border border-error/50 inline-block"></span>
+<span class="text-on-surface-variant">Peak Demand Tariff Window ($0.345/kWh)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Constraints Satisfied: 100% Demand Met without Load Shedding</span>
+</div>
+</div>
+</section>
+<!-- Main Workspace Grid -->
+<div class="w-full px-margin py-space-lg flex flex-col gap-space-xl">
+<!-- Dispatch Chart Section -->
+<div class="w-full bg-surface-container rounded-xl border border-surface-container-highest p-space-lg flex flex-col gap-space-md shadow-xl">
+<!-- Section Controls Strip -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-highest">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 bg-primary"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">Hourly Energy Dispatch Stack (00:00 - 23:00)</h2>
+<span class="font-label-sm text-label-sm text-outline px-space-xs py-0.5 bg-surface-container-lowest border border-surface-container-highest uppercase">RESOLUTION: 60 MIN</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="inline-flex bg-surface-container-lowest border border-surface-container-highest p-0.5" id="view-mode-group">
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase bg-primary-container text-on-primary-container font-bold transition-all" id="btn-stacked" onclick="setChartMode('stacked')" type="button">Stacked View</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-all" id="btn-dual" onclick="setChartMode('dual')" type="button">Dual Axis</button>
+</div>
+<button class="flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase border border-surface-container-highest transition-colors" onclick="exportScheduleCSV()" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Live Interactive Visual Dispatch Chart -->
+<div class="w-full relative overflow-x-auto select-none bg-surface-container-lowest p-space-sm border border-surface-container-highest">
+<!-- Tariffs Shading Zone Legend Overlay -->
+<div class="w-full min-w-[980px] h-6 flex justify-between font-label-sm text-label-sm mb-1">
+<div class="w-[20.83%] flex items-center justify-center bg-secondary/10 border-b-2 border-secondary text-secondary uppercase font-bold tracking-wider">
+            Off-Peak Tariff ($0.082/kWh) • BESS Charge Window
+          </div>
+<div class="w-[33.33%] flex items-center justify-center text-on-surface-variant text-[9px] uppercase tracking-widest">
+            Standard Morning &amp; Direct Solar Consumed
+          </div>
+<div class="w-[8.33%] flex items-center justify-center bg-primary/10 border-b-2 border-primary-fixed-dim text-primary text-[9px] uppercase font-bold">
+            Solar Derate Dip
+          </div>
+<div class="w-[20.83%] flex items-center justify-center bg-error/15 border-b-2 border-error text-error uppercase font-bold tracking-wider">
+            Critical Peak ($0.348/kWh) • Max Battery Dispatch
+          </div>
+<div class="w-[16.66%] flex items-center justify-center text-outline text-[9px] uppercase tracking-widest">
+            Late Night Standard
+          </div>
+</div>
+<!-- SVG Dispatch Visualizer -->
+<div class="w-full min-w-[980px] relative">
+<svg class="w-full h-80 overflow-visible" id="dispatch-svg" preserveaspectratio="none" viewbox="0 0 1000 360">
+<defs>
+<!-- Grid background pattern -->
+<pattern height="30" id="grid-matrix" patternunits="userSpaceOnUse" width="41.66">
+<path d="M 41.66 0 L 0 0 0 30" fill="none" stroke="#282a2f" stroke-dasharray="2,2" stroke-width="0.75"></path>
+</pattern>
+<!-- Subtle hatching for off-peak charging window -->
+<pattern height="8" id="offpeak-hatch" patterntransform="rotate(45 0 0)" patternunits="userSpaceOnUse" width="8">
+<line stroke="#0566d9" stroke-opacity="0.25" stroke-width="1.5" x1="0" x2="0" y1="0" y2="8"></line>
+</pattern>
+<!-- Hatching for peak window -->
+<pattern height="8" id="peak-hatch" patterntransform="rotate(45 0 0)" patternunits="userSpaceOnUse" width="8">
+<line stroke="#ffb4ab" stroke-opacity="0.2" stroke-width="1.5" x1="0" x2="0" y1="0" y2="8"></line>
+</pattern>
+</defs>
+<!-- Background Grid Fill -->
+<rect fill="url(#grid-matrix)" height="280" width="960" x="40" y="20"></rect>
+<!-- Tariff Highlight Bands -->
+<!-- Hours 00 to 05 (approx x: 40 to 240) -->
+<rect fill="url(#offpeak-hatch)" height="280" width="200" x="40" y="20"></rect>
+<!-- Hour 13 to 14 (Solar Derate/Midday Dip: x: 560 to 640) -->
+<rect fill="#f5c452" fill-opacity="0.08" height="280" width="80" x="560" y="20"></rect>
+<!-- Hours 16 to 21 (Peak: x: 680 to 880) -->
+<rect fill="url(#peak-hatch)" height="280" width="200" x="680" y="20"></rect>
+<!-- Y-Axis Gridlines & Ticks (Scale: 0 to 800 kW, 280px total height, 35px per 100kW) -->
+<!-- 800 kW -->
+<line stroke="#33353a" stroke-width="1" x1="40" x2="1000" y1="20" y2="20"></line>
+<text class="font-body-sm text-[10px]" fill="#9b8f7c" text-anchor="end" x="34" y="24">800 kW</text>
+<!-- 600 kW -->
+<line stroke="#33353a" stroke-width="1" x1="40" x2="1000" y1="90" y2="90"></line>
+<text class="font-body-sm text-[10px]" fill="#9b8f7c" text-anchor="end" x="34" y="94">600 kW</text>
+<!-- 400 kW -->
+<line stroke="#33353a" stroke-width="1" x1="40" x2="1000" y1="160" y2="160"></line>
+<text class="font-body-sm text-[10px]" fill="#9b8f7c" text-anchor="end" x="34" y="164">400 kW</text>
+<!-- 200 kW -->
+<line stroke="#33353a" stroke-width="1" x1="40" x2="1000" y1="230" y2="230"></line>
+<text class="font-body-sm text-[10px]" fill="#9b8f7c" text-anchor="end" x="34" y="234">200 kW</text>
+<!-- 0 kW Baseline -->
+<line stroke="#9b8f7c" stroke-width="1.5" x1="40" x2="1000" y1="300" y2="300"></line>
+<text class="font-body-sm text-[10px] font-bold" fill="#e2e2e9" text-anchor="end" x="34" y="304">0 kW</text>
+<!-- 24 Hourly Stacked Columns Group -->
+<!-- Each column: width 26, spacing 40, centered in 40px slot (slot_x = 40 + hour*40 + 7) -->
+<!-- Hour 00: Grid 520kW (Charge 310, Base 210), Solar 0 -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="00">
+<rect fill="#adc6ff" height="182" width="26" x="47" y="118"></rect>
+<rect fill="#77ffc4" fill-opacity="0.9" height="108" width="26" x="47" y="118"></rect>
+</g>
+<!-- Hour 01: Grid 560kW (Charge 350, Base 210), Solar 0 -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="01">
+<rect fill="#adc6ff" height="196" width="26" x="87" y="104"></rect>
+<rect fill="#77ffc4" fill-opacity="0.9" height="122" width="26" x="87" y="104"></rect>
+</g>
+<!-- Hour 02: Grid 580kW (Charge 370, Base 210), Solar 0 -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="02">
+<rect fill="#adc6ff" height="203" width="26" x="127" y="97"></rect>
+<rect fill="#77ffc4" fill-opacity="0.9" height="129" width="26" x="127" y="97"></rect>
+</g>
+<!-- Hour 03: Grid 540kW (Charge 340, Base 200), Solar 0 -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="03">
+<rect fill="#adc6ff" height="189" width="26" x="167" y="111"></rect>
+<rect fill="#77ffc4" fill-opacity="0.9" height="119" width="26" x="167" y="111"></rect>
+</g>
+<!-- Hour 04: Grid 490kW (Charge 290, Base 200), Solar 0 -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="04">
+<rect fill="#adc6ff" height="172" width="26" x="207" y="128"></rect>
+<rect fill="#77ffc4" fill-opacity="0.9" height="102" width="26" x="207" y="128"></rect>
+</g>
+<!-- Hour 05: Grid 340kW (Charge 110, Base 230), Solar 0 -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="05">
+<rect fill="#adc6ff" height="119" width="26" x="247" y="181"></rect>
+<rect fill="#77ffc4" fill-opacity="0.9" height="38" width="26" x="247" y="181"></rect>
+</g>
+<!-- Hour 06: Grid 240kW, Solar 60kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="06">
+<rect fill="#adc6ff" height="84" width="26" x="287" y="216"></rect>
+<rect fill="#ffe4af" height="21" width="26" x="287" y="195"></rect>
+</g>
+<!-- Hour 07: Grid 200kW, Solar 180kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="07">
+<rect fill="#adc6ff" height="70" width="26" x="327" y="230"></rect>
+<rect fill="#ffe4af" height="63" width="26" x="327" y="167"></rect>
+</g>
+<!-- Hour 08: Grid 160kW, Solar 290kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="08">
+<rect fill="#adc6ff" height="56" width="26" x="367" y="244"></rect>
+<rect fill="#ffe4af" height="102" width="26" x="367" y="142"></rect>
+</g>
+<!-- Hour 09: Grid 110kW, Solar 370kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="09">
+<rect fill="#adc6ff" height="39" width="26" x="407" y="261"></rect>
+<rect fill="#ffe4af" height="129" width="26" x="407" y="132"></rect>
+</g>
+<!-- Hour 10: Grid 70kW, Solar 430kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="10">
+<rect fill="#adc6ff" height="25" width="26" x="447" y="275"></rect>
+<rect fill="#ffe4af" height="150" width="26" x="447" y="125"></rect>
+</g>
+<!-- Hour 11: Grid 60kW, Solar 460kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="11">
+<rect fill="#adc6ff" height="21" width="26" x="487" y="279"></rect>
+<rect fill="#ffe4af" height="161" width="26" x="487" y="118"></rect>
+</g>
+<!-- Hour 12: Grid 75kW, Solar 440kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="12">
+<rect fill="#adc6ff" height="26" width="26" x="527" y="274"></rect>
+<rect fill="#ffe4af" height="154" width="26" x="527" y="120"></rect>
+</g>
+<!-- Hour 13 (DERATE DIP): Solar drops to 90kW, Grid steps up to 340kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="13">
+<rect fill="#adc6ff" height="119" width="26" x="567" y="181"></rect>
+<rect fill="#ffe4af" height="31" width="26" x="567" y="150"></rect>
+<!-- Highlight annotation marker -->
+<circle cx="580" cy="142" fill="#ffe4af" r="3"></circle>
+</g>
+<!-- Hour 14 (DERATE DIP): Solar 80kW, Grid 350kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="14">
+<rect fill="#adc6ff" height="123" width="26" x="607" y="177"></rect>
+<rect fill="#ffe4af" height="28" width="26" x="607" y="149"></rect>
+</g>
+<!-- Hour 15: Solar recovers partially to 190kW, Grid 260kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="15">
+<rect fill="#adc6ff" height="91" width="26" x="647" y="209"></rect>
+<rect fill="#ffe4af" height="66" width="26" x="647" y="143"></rect>
+</g>
+<!-- Hour 16 (CRITICAL PEAK START): Solar 40kW, Battery discharges 340kW, Grid minimal 110kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="16">
+<rect fill="#adc6ff" height="39" width="26" x="687" y="261"></rect>
+<rect fill="#ffe4af" height="14" width="26" x="687" y="247"></rect>
+<!-- Battery discharge represented by patterned bar on top -->
+<rect fill="#4ae3a8" fill-opacity="0.95" height="119" width="26" x="687" y="128"></rect>
+</g>
+<!-- Hour 17 (PEAK): Solar 0kW, Battery discharges 380kW, Grid minimal 130kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="17">
+<rect fill="#adc6ff" height="46" width="26" x="727" y="254"></rect>
+<rect fill="#4ae3a8" fill-opacity="0.95" height="133" width="26" x="727" y="121"></rect>
+</g>
+<!-- Hour 18 (PEAK): Solar 0kW, Battery discharges 360kW, Grid 150kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="18">
+<rect fill="#adc6ff" height="53" width="26" x="767" y="247"></rect>
+<rect fill="#4ae3a8" fill-opacity="0.95" height="126" width="26" x="767" y="121"></rect>
+</g>
+<!-- Hour 19 (PEAK): Solar 0kW, Battery discharges 320kW, Grid 180kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="19">
+<rect fill="#adc6ff" height="63" width="26" x="807" y="237"></rect>
+<rect fill="#4ae3a8" fill-opacity="0.95" height="112" width="26" x="807" y="125"></rect>
+</g>
+<!-- Hour 20 (PEAK END): Solar 0kW, Battery discharges 220kW, Grid 240kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="20">
+<rect fill="#adc6ff" height="84" width="26" x="847" y="216"></rect>
+<rect fill="#4ae3a8" fill-opacity="0.95" height="77" width="26" x="847" y="139"></rect>
+</g>
+<!-- Hour 21: Battery reaches lower reserve limit (15%). Grid takes 420kW -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="21">
+<rect fill="#adc6ff" height="147" width="26" x="887" y="153"></rect>
+</g>
+<!-- Hour 22: Grid 440kW, Battery Idle -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="22">
+<rect fill="#adc6ff" height="154" width="26" x="927" y="146"></rect>
+</g>
+<!-- Hour 23: Grid 460kW, Battery Idle -->
+<g class="hover:opacity-80 transition-opacity cursor-pointer" data-hour="23">
+<rect fill="#adc6ff" height="161" width="26" x="967" y="139"></rect>
+</g>
+<!-- Tariff Rate Overlay Polyline across schedule (Right Scale / Visual Trend) -->
+<!-- High values during peak (H16-20), lowest at H01-05 -->
+<polyline fill="none" points="
+                60,265 100,270 140,270 180,270 220,270 260,260 
+                300,230 340,210 380,200 420,200 460,200 500,200 540,200 
+                580,200 620,200 660,210 
+                700,55 740,55 780,55 820,55 860,55 
+                900,220 940,240 980,250" stroke="#f5c452" stroke-dasharray="3,3" stroke-width="2"></polyline>
+<!-- Timeline Hour Ticks Labels along X-Axis -->
+<g class="font-body-sm text-[10px] text-outline" fill="#9b8f7c" text-anchor="middle">
+<text x="60" y="322">00:00</text>
+<text x="100" y="322">01:00</text>
+<text x="140" y="322">02:00</text>
+<text x="180" y="322">03:00</text>
+<text x="220" y="322">04:00</text>
+<text x="260" y="322">05:00</text>
+<text x="300" y="322">06:00</text>
+<text x="340" y="322">07:00</text>
+<text x="380" y="322">08:00</text>
+<text x="420" y="322">09:00</text>
+<text x="460" y="322">10:00</text>
+<text x="500" y="322">11:00</text>
+<text x="540" y="322">12:00</text>
+<text x="580" y="322">13:00</text>
+<text x="620" y="322">14:00</text>
+<text x="660" y="322">15:00</text>
+<text x="700" y="322">16:00</text>
+<text x="740" y="322">17:00</text>
+<text x="780" y="322">18:00</text>
+<text x="820" y="322">19:00</text>
+<text x="860" y="322">20:00</text>
+<text x="900" y="322">21:00</text>
+<text x="940" y="322">22:00</text>
+<text x="980" y="322">23:00</text>
+</g>
+</svg>
+</div>
+<!-- Annotation Callout Pins under chart -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-sm mt-space-sm border-t border-surface-container-highest">
+<div class="flex items-start gap-space-xs bg-surface-container-high/40 p-space-xs">
+<span class="font-label-sm text-label-sm px-1 bg-secondary text-on-secondary font-bold">1</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary uppercase">Off-Peak Bulk Charging</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Battery charged to 98% capacity between 00:00-04:00 utilizing $0.082/kWh valley rate.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-container-high/40 p-space-xs">
+<span class="font-label-sm text-label-sm px-1 bg-primary-container text-on-primary-container font-bold">2</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary uppercase">Scheduled Derate Response</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inverter inverter firmware inspection at 13:00-14:00 capped PV array to 85kW; auto-balanced via grid.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-container-high/40 p-space-xs">
+<span class="font-label-sm text-label-sm px-1 bg-error text-on-error font-bold">3</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-error uppercase">Peak Tariff Peak-Shaving</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Battery discharges 1,620 kWh across 16:00-20:00 window, avoiding an estimated $563.80 in demand charges.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dispatch Telemetry Log Table Section -->
+<div class="w-full bg-surface-container rounded-xl border border-surface-container-highest p-space-lg flex flex-col gap-space-md shadow-xl">
+<!-- Table Header & Live Filtering Ribbon -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-highest">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 bg-tertiary"></span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">Hourly Dispatch Telemetry Log (24-Hour Solved Tensor)</h3>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-lowest border border-surface-container-highest p-0.5">
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase bg-primary-container text-on-primary-container font-bold transition-all" id="tab-all" onclick="filterTable('all')" type="button">All Hours (24)</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-all" id="tab-lowest" onclick="filterTable('lowest')" type="button">Lowest Price Only</button>
+<button class="px-space-sm py-1 font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-all" id="tab-battery" onclick="filterTable('battery')" type="button">Battery Active Only</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-sm py-1 border border-surface-container-highest" id="row-count-display">
+            SHOWING 24 OF 24 HOURS
+          </span>
+</div>
+</div>
+<!-- Constrained Scrollable Data Table Container -->
+<div class="w-full max-h-[520px] overflow-y-auto border border-surface-container-highest bg-surface-container-lowest">
+<table class="w-full text-left border-collapse" id="telemetry-table">
+<thead class="sticky top-0 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase border-b border-surface-container-highest select-none z-10">
+<tr>
+<th class="py-space-sm px-space-md">Hour (UTC)</th>
+<th class="py-space-sm px-space-md">Grid Electricity</th>
+<th class="py-space-sm px-space-md">Solar Generation</th>
+<th class="py-space-sm px-space-md">Battery Action</th>
+<th class="py-space-sm px-space-md">Battery SOC &amp; Reserve</th>
+<th class="py-space-sm px-space-md">Tariff Rate ($/kWh)</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y divide-surface-container-highest/60 text-on-surface">
+<!-- Hour 00 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="active" data-price-tier="offpeak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                00:00 <span class="text-outline font-normal">[H00]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">520 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary/10 text-tertiary border border-tertiary/30 font-label-sm uppercase font-bold">+Charge 310 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">740 kWh (30.8%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 30.8%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-tertiary-container font-bold">$0.082</span>
+<span class="px-1 bg-secondary/20 text-secondary font-label-sm text-[9px] uppercase">Off-Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 01 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="active" data-price-tier="offpeak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                01:00 <span class="text-outline font-normal">[H01]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">560 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary/10 text-tertiary border border-tertiary/30 font-label-sm uppercase font-bold">+Charge 350 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">1,090 kWh (45.4%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 45.4%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-tertiary-container font-bold">$0.082</span>
+<span class="px-1 bg-secondary/20 text-secondary font-label-sm text-[9px] uppercase">Off-Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 02 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="active" data-price-tier="offpeak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                02:00 <span class="text-outline font-normal">[H02]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">580 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary/10 text-tertiary border border-tertiary/30 font-label-sm uppercase font-bold">+Charge 370 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">1,460 kWh (60.8%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 60.8%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-tertiary-container font-bold">$0.082</span>
+<span class="px-1 bg-secondary/20 text-secondary font-label-sm text-[9px] uppercase">Off-Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 03 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="active" data-price-tier="offpeak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                03:00 <span class="text-outline font-normal">[H03]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">540 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary/10 text-tertiary border border-tertiary/30 font-label-sm uppercase font-bold">+Charge 340 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">1,800 kWh (75.0%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 75%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-tertiary-container font-bold">$0.082</span>
+<span class="px-1 bg-secondary/20 text-secondary font-label-sm text-[9px] uppercase">Off-Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 04 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="active" data-price-tier="offpeak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                04:00 <span class="text-outline font-normal">[H04]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">490 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary/10 text-tertiary border border-tertiary/30 font-label-sm uppercase font-bold">+Charge 290 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,090 kWh (87.1%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 87.1%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-tertiary-container font-bold">$0.082</span>
+<span class="px-1 bg-secondary/20 text-secondary font-label-sm text-[9px] uppercase">Off-Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 05 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="active" data-price-tier="offpeak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                05:00 <span class="text-outline font-normal">[H05]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">340 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary/10 text-tertiary border border-tertiary/30 font-label-sm uppercase font-bold">+Charge 110 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-tertiary-container font-bold">$0.082</span>
+<span class="px-1 bg-secondary/20 text-secondary font-label-sm text-[9px] uppercase">Off-Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 06 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">06:00 <span class="text-outline font-normal">[H06]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">240 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">60 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.135</td>
+</tr>
+<!-- Hour 07 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">07:00 <span class="text-outline font-normal">[H07]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">200 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">180 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.145</td>
+</tr>
+<!-- Hour 08 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">08:00 <span class="text-outline font-normal">[H08]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">160 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">290 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.155</td>
+</tr>
+<!-- Hour 09 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">09:00 <span class="text-outline font-normal">[H09]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">110 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">370 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.160</td>
+</tr>
+<!-- Hour 10 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">10:00 <span class="text-outline font-normal">[H10]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">70 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">430 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.160</td>
+</tr>
+<!-- Hour 11 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">11:00 <span class="text-outline font-normal">[H11]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">60 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">460 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.165</td>
+</tr>
+<!-- Hour 12 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">12:00 <span class="text-outline font-normal">[H12]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">75 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">440 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.165</td>
+</tr>
+<!-- Hour 13 (Derate Dip) -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="idle" data-price-tier="derate">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                13:00 <span class="text-primary font-normal">[DERATE]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">340 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">90 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.170</td>
+</tr>
+<!-- Hour 14 (Derate Dip) -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="idle" data-price-tier="derate">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                14:00 <span class="text-primary font-normal">[DERATE]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">350 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">80 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.175</td>
+</tr>
+<!-- Hour 15 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">15:00 <span class="text-outline font-normal">[H15]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">260 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">190 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">2,200 kWh (91.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary h-full" style="width: 91.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.190</td>
+</tr>
+<!-- Hour 16 (Peak Window) -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="active" data-price-tier="peak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                16:00 <span class="text-error font-normal">[PEAK]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">110 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-primary-fixed-dim font-bold">40 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary-container/10 text-tertiary-container border border-tertiary-container/30 font-label-sm uppercase font-bold">-Discharge 340 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">1,860 kWh (77.5%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary-container h-full" style="width: 77.5%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-error font-bold">$0.348</span>
+<span class="px-1 bg-error/20 text-error font-label-sm text-[9px] uppercase">Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 17 (Peak Window) -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="active" data-price-tier="peak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                17:00 <span class="text-error font-normal">[PEAK]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">130 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary-container/10 text-tertiary-container border border-tertiary-container/30 font-label-sm uppercase font-bold">-Discharge 380 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">1,480 kWh (61.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary-container h-full" style="width: 61.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-error font-bold">$0.348</span>
+<span class="px-1 bg-error/20 text-error font-label-sm text-[9px] uppercase">Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 18 (Peak Window) -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="active" data-price-tier="peak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                18:00 <span class="text-error font-normal">[PEAK]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">150 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary-container/10 text-tertiary-container border border-tertiary-container/30 font-label-sm uppercase font-bold">-Discharge 360 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">1,120 kWh (46.6%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary-container h-full" style="width: 46.6%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-error font-bold">$0.348</span>
+<span class="px-1 bg-error/20 text-error font-label-sm text-[9px] uppercase">Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 19 (Peak Window) -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="active" data-price-tier="peak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                19:00 <span class="text-error font-normal">[PEAK]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">180 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary-container/10 text-tertiary-container border border-tertiary-container/30 font-label-sm uppercase font-bold">-Discharge 320 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">800 kWh (33.3%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary-container h-full" style="width: 33.3%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-error font-bold">$0.348</span>
+<span class="px-1 bg-error/20 text-error font-label-sm text-[9px] uppercase">Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 20 (Peak Window Final) -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="active" data-price-tier="peak">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">
+                20:00 <span class="text-error font-normal">[PEAK]</span>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">240 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary-container/10 text-tertiary-container border border-tertiary-container/30 font-label-sm uppercase font-bold">-Discharge 220 kW</span>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">580 kWh (24.1%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-tertiary-container h-full" style="width: 24.1%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-error font-bold">$0.348</span>
+<span class="px-1 bg-error/20 text-error font-label-sm text-[9px] uppercase">Peak</span>
+</div>
+</td>
+</tr>
+<!-- Hour 21 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">21:00 <span class="text-outline font-normal">[H21]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">420 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md text-tertiary-container font-bold">360 kWh (15.0%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-error h-full" style="width: 15%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.180</td>
+</tr>
+<!-- Hour 22 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container-low transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">22:00 <span class="text-outline font-normal">[H22]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">440 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">360 kWh (15.0%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-error h-full" style="width: 15%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.150</td>
+</tr>
+<!-- Hour 23 -->
+<tr class="hover:bg-surface-container-high/50 bg-surface-container transition-colors" data-battery="idle" data-price-tier="standard">
+<td class="py-space-sm px-space-md font-body-md font-bold text-on-surface">23:00 <span class="text-outline font-normal">[H23]</span></td>
+<td class="py-space-sm px-space-md font-body-md text-secondary font-bold">460 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md font-body-md text-outline">0 <span class="font-body-sm text-outline font-normal">kWh</span></td>
+<td class="py-space-sm px-space-md"><span class="text-outline font-label-sm uppercase">Idle 0 kW</span></td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-md">360 kWh (15.0%)</span>
+<div class="w-16 h-1.5 bg-surface-container-highest"><div class="bg-error h-full" style="width: 15%"></div></div>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-body-md text-on-surface-variant">$0.130</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footer Action & Status Drawer -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md">
+<span>DISPATCH SOLVER: COIN-OR CBC 2.10</span>
+<span>•</span>
+<span>OBJECTIVE FUNCTION: MINIMIZE TARIFF COST</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface">RESERVE MARGIN: 15% (360 kWh) ENFORCED</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function setChartMode(mode) {
+      const btnStacked = document.getElementById('btn-stacked');
+      const btnDual = document.getElementById('btn-dual');
+      if (mode === 'stacked') {
+        btnStacked.className = "px-space-sm py-1 font-label-sm text-label-sm uppercase bg-primary-container text-on-primary-container font-bold transition-all";
+        btnDual.className = "px-space-sm py-1 font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-all";
+      } else {
+        btnDual.className = "px-space-sm py-1 font-label-sm text-label-sm uppercase bg-primary-container text-on-primary-container font-bold transition-all";
+        btnStacked.className = "px-space-sm py-1 font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-all";
+      }
+    }
+
+    function filterTable(filterType) {
+      const rows = document.querySelectorAll('#telemetry-table tbody tr');
+      const tabAll = document.getElementById('tab-all');
+      const tabLowest = document.getElementById('tab-lowest');
+      const tabBattery = document.getElementById('tab-battery');
+      const countDisplay = document.getElementById('row-count-display');
+
+      const activeClasses = "px-space-sm py-1 font-label-sm text-label-sm uppercase bg-primary-container text-on-primary-container font-bold transition-all";
+      const inactiveClasses = "px-space-sm py-1 font-label-sm text-label-sm uppercase text-on-surface-variant hover:text-on-surface transition-all";
+
+      tabAll.className = inactiveClasses;
+      tabLowest.className = inactiveClasses;
+      tabBattery.className = inactiveClasses;
+
+      let visibleCount = 0;
+
+      if (filterType === 'all') {
+        tabAll.className = activeClasses;
+        rows.forEach(row => {
+          row.style.display = '';
+          visibleCount++;
+        });
+      } else if (filterType === 'lowest') {
+        tabLowest.className = activeClasses;
+        rows.forEach(row => {
+          if (row.getAttribute('data-price-tier') === 'offpeak') {
+            row.style.display = '';
+            visibleCount++;
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      } else if (filterType === 'battery') {
+        tabBattery.className = activeClasses;
+        rows.forEach(row => {
+          if (row.getAttribute('data-battery') === 'active') {
+            row.style.display = '';
+            visibleCount++;
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      }
+
+      countDisplay.textContent = `SHOWING ${visibleCount} OF 24 HOURS`;
+    }
+
+    function exportScheduleCSV() {
+      const rows = [
+        ["Hour", "Grid_kWh", "Solar_kWh", "Battery_Action_kW", "Tariff_Rate_USD"],
+        ["00:00", 520, 0, "+310", 0.082],
+        ["01:00", 560, 0, "+350", 0.082],
+        ["02:00", 580, 0, "+370", 0.082],
+        ["03:00", 540, 0, "+340", 0.082],
+        ["04:00", 490, 0, "+290", 0.082],
+        ["05:00", 340, 0, "+110", 0.082],
+        ["06:00", 240, 60, "0", 0.135],
+        ["07:00", 200, 180, "0", 0.145],
+        ["08:00", 160, 290, "0", 0.155],
+        ["09:00", 110, 370, "0", 0.160],
+        ["10:00", 70, 430, "0", 0.160],
+        ["11:00", 60, 460, "0", 0.165],
+        ["12:00", 75, 440, "0", 0.165],
+        ["13:00", 340, 90, "0", 0.170],
+        ["14:00", 350, 80, "0", 0.175],
+        ["15:00", 260, 190, "0", 0.190],
+        ["16:00", 110, 40, "-340", 0.348],
+        ["17:00", 130, 0, "-380", 0.348],
+        ["18:00", 150, 0, "-360", 0.348],
+        ["19:00", 180, 0, "-320", 0.348],
+        ["20:00", 240, 0, "-220", 0.348],
+        ["21:00", 420, 0, "0", 0.180],
+        ["22:00", 440, 0, "0", 0.150],
+        ["23:00", 460, 0, "0", 0.130]
+      ];
+
+      let csvContent = "data:text/csv;charset=utf-8," 
+        + rows.map(e => e.join(",")).join("\n");
+
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "stanford_node4_dispatch_schedule_24h.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-md"><span>GRIDWISE AI TELEMETRY DISPATCH SYSTEM</span><span>•</span><span>NODE 04 RUNTIME: ACTIVE</span></div><div>SYSTEM TELEMETRY ENGINE © 2025 STANFORD MICROGRID INFRASTRUCTURE</div></div></footer></body></html>
