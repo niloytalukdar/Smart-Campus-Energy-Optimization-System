@@ -27,8 +27,7 @@ app.include_router(optimize.router)
 
 @app.get("/")
 def root():
-    # Redirect root to the single-page UI for a better developer experience
-    return RedirectResponse(url="/app-ui")
+    return RedirectResponse(url="/system-ui/ai-interpretation")
 
 
 @app.get("/app-ui")
